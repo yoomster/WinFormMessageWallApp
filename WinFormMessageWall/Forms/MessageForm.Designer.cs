@@ -33,6 +33,7 @@
             this.messageListBox = new System.Windows.Forms.ListBox();
             this.messageText = new System.Windows.Forms.TextBox();
             this.messageBoxLabel = new System.Windows.Forms.Label();
+            this.deleteButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // addMessageButton
@@ -66,7 +67,7 @@
             this.messageListBox.Location = new System.Drawing.Point(95, 227);
             this.messageListBox.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.messageListBox.Name = "messageListBox";
-            this.messageListBox.Size = new System.Drawing.Size(502, 388);
+            this.messageListBox.Size = new System.Drawing.Size(452, 388);
             this.messageListBox.TabIndex = 3;
             // 
             // messageText
@@ -87,12 +88,23 @@
             this.messageBoxLabel.TabIndex = 4;
             this.messageBoxLabel.Text = "Messages";
             // 
+            // deleteButton
+            // 
+            this.deleteButton.Location = new System.Drawing.Point(555, 569);
+            this.deleteButton.Name = "deleteButton";
+            this.deleteButton.Size = new System.Drawing.Size(112, 46);
+            this.deleteButton.TabIndex = 5;
+            this.deleteButton.Text = "Delete";
+            this.deleteButton.UseVisualStyleBackColor = true;
+            this.deleteButton.Click += new System.EventHandler(this.deleteButton_Click);
+            // 
             // MessageForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.ClientSize = new System.Drawing.Size(697, 675);
+            this.Controls.Add(this.deleteButton);
             this.Controls.Add(this.messageBoxLabel);
             this.Controls.Add(this.messageText);
             this.Controls.Add(this.messageListBox);
@@ -114,5 +126,6 @@
         private System.Windows.Forms.ListBox messageListBox;
         private System.Windows.Forms.TextBox messageText;
         private System.Windows.Forms.Label messageBoxLabel;
+        private System.Windows.Forms.Button deleteButton;
     }
 }

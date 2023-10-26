@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace WinFormMessageWall
 {
@@ -38,6 +39,17 @@ namespace WinFormMessageWall
                 messageText.Text = "";
             }
             messageText.Focus();
+        }
+
+        private void deleteButton_Click(object sender, EventArgs e)
+        {
+            if (messageListBox.SelectedItem != null)
+            {
+                // Remove the selected item from the ListBox
+                messages.Remove(messageListBox.SelectedItem.ToString());
+                // Refresh the ListBox to reflect the changes
+                messageListBox.Refresh();
+            }
         }
     }
 }
