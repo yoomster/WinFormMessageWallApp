@@ -16,7 +16,10 @@ namespace WinFormMessageWall
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Dashboard());
+
+            //changed main form to welcomeform
+            Application.Run(new WelcomeForm());
+
         }
     }
 }

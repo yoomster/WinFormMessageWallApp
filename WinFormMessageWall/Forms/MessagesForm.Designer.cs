@@ -33,6 +33,7 @@
             this.messageListBox = new System.Windows.Forms.ListBox();
             this.messageListBoxLabel = new System.Windows.Forms.Label();
             this.addMessage = new System.Windows.Forms.Button();
+            this.deleteButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // messageLabel
@@ -58,16 +59,18 @@
             this.messageListBox.Location = new System.Drawing.Point(57, 111);
             this.messageListBox.Name = "messageListBox";
             this.messageListBox.Size = new System.Drawing.Size(333, 220);
-            this.messageListBox.TabIndex = 3;
+            this.messageListBox.TabIndex = 6;
+            this.messageListBox.TabStop = false;
+            this.messageListBox.UseTabStops = false;
             // 
             // messageListBoxLabel
             // 
             this.messageListBoxLabel.AutoSize = true;
             this.messageListBoxLabel.Location = new System.Drawing.Point(53, 84);
             this.messageListBoxLabel.Name = "messageListBoxLabel";
-            this.messageListBoxLabel.Size = new System.Drawing.Size(83, 24);
+            this.messageListBoxLabel.Size = new System.Drawing.Size(92, 24);
             this.messageListBoxLabel.TabIndex = 3;
-            this.messageListBoxLabel.Text = "Message";
+            this.messageListBoxLabel.Text = "Messages";
             // 
             // addMessage
             // 
@@ -79,12 +82,23 @@
             this.addMessage.UseVisualStyleBackColor = true;
             this.addMessage.Click += new System.EventHandler(this.addMessage_Click);
             // 
+            // deleteButton
+            // 
+            this.deleteButton.Location = new System.Drawing.Point(396, 299);
+            this.deleteButton.Name = "deleteButton";
+            this.deleteButton.Size = new System.Drawing.Size(99, 32);
+            this.deleteButton.TabIndex = 5;
+            this.deleteButton.Text = "Delete";
+            this.deleteButton.UseVisualStyleBackColor = true;
+            //this.deleteButton.Click += new System.EventHandler(this.deleteButton_Click);
+            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.ClientSize = new System.Drawing.Size(507, 364);
+            this.Controls.Add(this.deleteButton);
             this.Controls.Add(this.addMessage);
             this.Controls.Add(this.messageListBoxLabel);
             this.Controls.Add(this.messageListBox);
@@ -93,7 +107,7 @@
             this.Font = new System.Drawing.Font("Microsoft Yi Baiti", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.Name = "Dashboard";
-            this.Text = "Form1";
+            this.Text = "Message Wall";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -106,6 +120,7 @@
         private System.Windows.Forms.ListBox messageListBox;
         private System.Windows.Forms.Label messageListBoxLabel;
         private System.Windows.Forms.Button addMessage;
+        private System.Windows.Forms.Button deleteButton;
     }
 }
 

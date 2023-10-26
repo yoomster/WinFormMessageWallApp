@@ -31,7 +31,7 @@ namespace WinFormMessageWall
             if (string.IsNullOrWhiteSpace(messageText.Text))
             {
                 MessageBox.Show("Incorrect entry, plz enter a message to add to the list",
-                    "Black Message Field", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    "Blank Message Field", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
@@ -42,5 +42,10 @@ namespace WinFormMessageWall
             messageText.Focus();
 
         }
+
+        //private void deleteButton_Click(object sender, EventArgs e)
+        //{
+        //    messages.Rem
+        //}
     }
 }

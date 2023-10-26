@@ -5,6 +5,8 @@ VisualStudioVersion = 17.4.33122.133
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormMessageWall", "WinFormMessageWall\WinFormMessageWall.csproj", "{07AC2212-35BA-4BE0-AC5E-A24017DD8BE0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessageWallLibrary", "MessageWallLibrary\MessageWallLibrary.csproj", "{F6B7EAA4-4219-4760-B2A8-5F250BE42472}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{07AC2212-35BA-4BE0-AC5E-A24017DD8BE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{07AC2212-35BA-4BE0-AC5E-A24017DD8BE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{07AC2212-35BA-4BE0-AC5E-A24017DD8BE0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6B7EAA4-4219-4760-B2A8-5F250BE42472}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6B7EAA4-4219-4760-B2A8-5F250BE42472}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6B7EAA4-4219-4760-B2A8-5F250BE42472}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6B7EAA4-4219-4760-B2A8-5F250BE42472}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
